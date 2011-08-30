@@ -102,6 +102,10 @@ public class MaximumSubarray {
         
         Tuple max = findMaxSubArray(A, 0, A.length - 1);
         System.out.println("Max subarray has sum: " + max.getC());
+        System.out.print("Consisting of: ");
         
+        for (int i = max.getA(); i <= max.getB(); ++i)
+            System.out.print(A[i] + " ");
+        System.out.println("");
     }
 }
