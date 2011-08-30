@@ -41,7 +41,7 @@ class Tuple {
     
 }
 
-public class MaximumSubarray {
+public class MaximumSubarrayDivide {
     
     static Tuple findMaxCrossingSubArray(int[] A, int low, int mid, int high) {
         /* A is the array, low is the lowest index, mid is the mid index, high
