@@ -10,7 +10,6 @@ package Search.Linear;
  * @author mihnea
  */
 public class LinearSearch {
-    @SuppressWarnings("empty-statement")
     public static void main(String[] args) {
         int[] A = {31, 41, 59, 26, 41, 58};
         int v = 26;
