@@ -15,9 +15,14 @@ public class LinearSearch {
         int v = 26;
         int i;
 
-        for (i = 0; (i < A.length) && (A[i] != v); ++i);
+        int length = A.length;
 
-        if (i == A.length)
+        //If A was a vector of 1.000.000.000 elements, for each i in the for syntax, 
+        //java will calculate the length of 1.000.000.000 for 1.000.000.000 times.
+
+        for (i = 0; (i < length) && (A[i] != v); ++i);
+
+        if (i == length)
             System.out.println("Not found.");
         else
             System.out.printf("Found at index %d.\n", i);
